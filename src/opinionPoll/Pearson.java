@@ -10,7 +10,15 @@ public class Pearson {
         // нове обект
         this.name = name;
         this.age = age;
-
     }
+
+    //getter -> е маетод, чрез който достъпваме стойност на поле.
     //3. методи -> поведение.
+
+    public String grtName(){
+        return this.name;
+    }
+    public int getAge(){
+        return this.age;
+    }
 }

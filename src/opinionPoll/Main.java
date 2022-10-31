@@ -23,7 +23,11 @@ public class Main {
                 Pearson pearson = new Pearson(name,age);
                 pearsonList.add(pearson);
             }
+        }
 
+        for (Pearson pearson:pearsonList) {
+            // name - age
+            System.out.println(pearson.grtName() + " - " + pearson.getAge());
         }
     }
 }
