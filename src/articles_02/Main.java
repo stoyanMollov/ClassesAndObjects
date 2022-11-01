@@ -23,14 +23,22 @@ public class Main {
             // "Rename"
             // "Change Author"
 
-            if (commands.equals("Edit")){
+            if (commands.contains("Edit")){
                 // променяме съдържанието с новото.
+                String newContent = commands.split(": ")[1];
+                article.edit(newContent);
                 
-            } else if (commands.equals("Rename")) {
+            } else if (commands.contains("Rename")) {
+                String newTitle = commands.split(": ")[1];
+                article.rename(newTitle);
                 
-            } else if (commands.equals("ChangeAuthor")) {
-                
+            } else if (commands.contains("ChangeAuthor")) {
+                String newAuthor = commands.split(": ")[1];
+                article.changeAuthor(newAuthor);
             }
         }
+
+        // заглавие - съдържание: автор
+        System.out.println(article);
     }
 }

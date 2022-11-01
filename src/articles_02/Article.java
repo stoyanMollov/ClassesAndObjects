@@ -25,6 +25,11 @@ public class Article {
         this.author = newAuthor;
     }
     public void rename(String newTime){
+
         this.title = newTime;
+    }
+    @Override
+    public String toString(){
+        return this.title + " - " + this.content + ": " + this.author;
     }
 }
